@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import components from '../src/components/UI'
 
-import './assets/styles.css'
+import './components/assets/styles.css'
 
 const app = createApp(App)
 

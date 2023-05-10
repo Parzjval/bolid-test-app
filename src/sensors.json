@@ -1,11 +1,5 @@
 [
   {
-    "sensor_id": 1,
-    "name": "N/A",
-    "temperature": 20,
-    "humidity": 25
-  },
-  {
     "sensor_id": 2,
     "name": "N/A"
   },

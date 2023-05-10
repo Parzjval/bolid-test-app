@@ -1,0 +1,136 @@
+<template>
+  <div class="app">
+    <my-modal v-model:show="modalVisible">
+      <sensor-form @create="createSensor" />
+    </my-modal>
+    <SensorList :sensorsData="sensors" @remove="removeSensor" />
+    <my-button class="center" @click="showModal">Добавить датчик</my-button>
+  </div>
+</template>
+
+<script>
+import SensorList from './components/SensorList.vue'
+import SensorForm from './components/SensorForm.vue'
+
+export default {
+  name: 'App',
+  components: {
+    SensorList,
+    SensorForm
+  },
+  data() {
+    return {
+      modalVisible: false,
+      sensors: [
+        {
+          sensor_id: 2,
+          name: 'N/A'
+        },
+        {
+          sensor_id: 3,
+          name: 'N/A',
+          temperature: 13
+        },
+        {
+          sensor_id: 4,
+          name: 'N/A',
+          humidity: 58
+        },
+        {
+          sensor_id: 5,
+          name: 'N/A',
+          temperature: 23,
+          humidity: 59
+        },
+        {
+          sensor_id: 6,
+          name: 'N/A'
+        },
+        {
+          sensor_id: 7,
+          name: 'N/A',
+          temperature: 19
+        },
+        {
+          sensor_id: 8,
+          name: 'N/A',
+          humidity: 35
+        },
+        {
+          sensor_id: 9,
+          name: 'N/A',
+          temperature: 22,
+          humidity: 50
+        },
+        {
+          sensor_id: 10,
+          name: 'N/A'
+        },
+        {
+          sensor_id: 11,
+          name: 'N/A',
+          temperature: 20
+        },
+        {
+          sensor_id: 12,
+          name: 'N/A',
+          humidity: 57
+        },
+        {
+          sensor_id: 13,
+          name: 'N/A',
+          temperature: 22,
+          humidity: 55
+        },
+        {
+          sensor_id: 14,
+          name: 'N/A'
+        },
+        {
+          sensor_id: 15,
+          name: 'N/A',
+          temperature: 13
+        },
+        {
+          sensor_id: 16,
+          name: 'N/A',
+          humidity: 45
+        },
+        {
+          sensor_id: 17,
+          name: 'N/A',
+          temperature: 21,
+          humidity: 35
+        },
+        {
+          sensor_id: 18,
+          name: 'N/A'
+        },
+        {
+          sensor_id: 19,
+          name: 'N/A',
+          temperature: 20
+        },
+        {
+          sensor_id: 20,
+          name: 'N/A',
+          humidity: 35
+        }
+      ]
+    }
+  },
+  methods: {
+    createSensor(sensor) {
+      this.sensors.push({ ...sensor })
+    },
+
+    removeSensor(index) {
+      this.sensors.splice(index, 1)
+    },
+
+    showModal() {
+      this.modalVisible = 'true'
+    }
+  }
+}
+</script>

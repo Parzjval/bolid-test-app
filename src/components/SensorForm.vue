@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       sensor: {
-        sensor_id: '',
+        id: '',
         name: '',
         temperature: '',
         humidity: ''
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     createSensor() {
-      this.sensor.sensor_id = Date.now()
+      this.sensor.id = Date.now()
       this.$emit('create', this.sensor)
       this.sensor = {
         name: '',

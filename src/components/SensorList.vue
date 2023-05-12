@@ -5,11 +5,11 @@
       <sensor-item
         v-for="(sensor, index) in sensors"
         :sensor="sensor"
-        :key="sensor.sensor_id"
+        :key="sensor.id"
         @remove="$emit('remove', index)"
       />
     </ul>
-    <h3 v-else style="color: red">Список датчиков пуст</h3>
+    <h3 v-else class="empty">Список датчиков пуст</h3>
   </div>
 </template>
 
@@ -28,21 +28,21 @@ export default {
   },
   setup(props) {
     const sensors = reactive(props.sensorsData)
-    const newSensor = reactive({ sensor_id: null, name: '', temperature: null, humidity: null })
-
-    const addSensor = () => {
-      sensors.push({ ...newSensor })
-      // newSensor.sensor_id =
-      newSensor.name = ''
-      newSensor.temperature = null
-      newSensor.humidity = null
-    }
-
     return {
-      sensors,
-      newSensor,
-      addSensor
+      sensors
     }
   }
 }
 </script>
+
+<style scoped>
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.empty {
+  color: red;
+  text-align: center;
+}
+</style>

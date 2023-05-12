@@ -44,10 +44,10 @@ export default {
   color: #fff;
 }
 
-.btn.danger {
-  background: #e53935;
+.btn.default {
+  background: #c8c3c3;
   color: #fff;
-  border-color: #e53935;
+  border-color: #c8c3c3;
 }
 
 .btn.center {

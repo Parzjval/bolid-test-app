@@ -1,23 +1,27 @@
-# bolid-test-project
+# sensors-project
 
-This template should help get you started developing with Vue 3 in Vite.
+Приложение для работы с датчиками
 
-## Recommended IDE Setup
+Приложение позволяет пользователю:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- получать список имеющихся датчиков по умолчанию;
+- просматривать полную информацию о датчиках;
+- добавлять новые датчики;
+- удалять имеющиеся датчики;
+
+Приложение написано с помощью фреймворка Vue.
+Хранение данных реализовано через localstorage.
 
 
-## Customize configuration
+## Установка
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### Установка необходимых пакетов
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Запуск проекта
 
 ```sh
 npm run dev

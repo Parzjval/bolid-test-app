@@ -30,7 +30,7 @@ npm run dev
 ## Интерфейс
 
 ### Список датчиков 
-![Список датчиков](https://github.com/parzjval/vue-sensors-app/blob/main/public/Добавление%20датчика.png)
+![Список датчиков](https://github.com/parzjval/vue-sensors-app/blob/main/public/Список%20датчиков.png)
 
 ### Добавление датчика 
 ![Добавление датчика](https://github.com/parzjval/vue-sensors-app/blob/main/public/Добавление%20датчика.png)
